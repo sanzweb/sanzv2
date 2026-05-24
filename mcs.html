@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-[#041b29] text-white min-h-screen flex flex-col">
+    <!-- Navigasi -->
+    <nav id="header" class="flex justify-between items-center px-6 py-4 max-w-[1200px] mx-auto w-full bg-[#041b29] text-white fixed top-0 left-0 right-0 z-50 shadow-md transition-shadow duration-300">
+      <!-- Left Navigation -->
+      <ul class="flex space-x-6 text-sm md:text-base">
+        <li><a class="hover:underline" href="index.html">Home</a></li>
+        <li><a class="hover:underline" href="#about">About</a></li>
+        <li><a class="hover:underline" href="mcs.html">MCS</a></li>
+      </ul>
+    
+      <!-- Centered Logo -->
+      <div class="freestyle text-[#0bc5ea] text-4xl font-bold text-center select-none absolute left-1/2 transform -translate-x-1/2 hover:scale-105 transition-transform duration-300">
+        MCS
+      </div>        
+    
+      <!-- Right Navigation -->
+      <ul class="flex space-x-6 text-sm md:text-base">
+        <li><a class="hover:underline" href="#education">Education</a></li>
+        <li><a class="hover:underline" href="#skill">Skill</a></li>
+        <li><a class="hover:underline" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main id="home" class="flex flex-col md:flex-row items-center justify-between flex-1 max-w-[1200px] mx-auto px-6 py-12 gap-12 md:gap-24 mt-16">
+    <section class="max-w-lg md:max-w-xl space-y-4 md:text-left">
+      <h3 class="font-semibold text-white text-lg md:text-xl">This</h3>
+      <h1 class="font-extrabold text-white text-3xl md:text-5xl leading-tight">MCS</h1>
+      <h2 class="font-semibold text-white text-xl md:text-2xl">
+        That's what it means <span id="typing-text1" class="text-cyan-400"></span><span class="text-cyan-400">|</span>
+      </h2>
+      <p class="text-white text-sm md:text-base max-w-md">
+        MCS atau Manusia Calon Surga adalah sebuah nama grup WhatsApp yang terdiri dari 4 orang. Grup ini berdiri sejak tahun 2023 dan dibuat oleh seseorang bernama Farid.
+      </p>
+      <div class="flex space-x-6 mt-4">
+        <a aria-label="Facebook" class="text-cyan-400 border border-cyan-400 rounded-full p-3 hover:bg-cyan-400 hover:text-[#041b29] transition" href="https://www.facebook.com/Sanz.X.ID.1" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a aria-label="WhatsApp" class="text-cyan-400 border border-cyan-400 rounded-full p-3 hover:bg-cyan-400 hover:text-[#041b29] transition" href="https://wa.me/62895635507411" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a aria-label="Instagram" class="text-cyan-400 border border-cyan-400 rounded-full p-3 hover:bg-cyan-400 hover:text-[#041b29] transition" href="https://www.instagram.com/sanzuhuy" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a aria-label="TikTok" class="text-cyan-400 border border-cyan-400 rounded-full p-3 hover:bg-cyan-400 hover:text-[#041b29] transition" href="https://www.tiktok.com/@sanzangjay" target="_blank">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+      <a href="#about">
+        <button class="mt-6 bg-cyan-400 text-[#041b29] font-semibold rounded-full px-6 py-2 text-sm md:text-base shadow-[0_0_15px_#0ff] hover:shadow-[0_0_25px_#0ff] transition hover:scale-105 duration-300">
+          Tentang Saya
+        </button>
+      </a>        
+    </section>
+
+    <!-- Right Image -->
+    <div class="relative rounded-full p-[6px] bg-gradient-to-tr from-[#00f0ff] via-[#a0f0ff] to-[#d400ff] shadow-[0_0_30px_10px_rgba(0,240,255,0.7)]">
+      <img alt="Foto Profil" class="rounded-full w-72 h-72 object-cover" height="288" src="image/mcs (2).JPG" width="288" />
+      <div class="absolute inset-0 rounded-full shadow-[0_0_40px_20px_rgba(0,240,255,0.7)] pointer-events-none"></div>
+    </div>
+  </main>
+
+  <div class="max-w-6xl w-full mx-auto text-center mt-20 mb-20">
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold text-white mb-12">
+      Member <span class="text-cyan-400">MCS</span>
+    </h1>
+  
+    <!-- Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <!-- Card 1 -->
+      <div class="bg-[#0e2a3a] rounded-xl p-10 flex flex-col items-center text-center neon-card cursor-pointer">
+        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-[#c4c4c4] mb-6">
+          <img alt="Ketua Guild" class="w-full h-full object-cover" height="160" src="image/ciko.jpeg" width="160" />
+        </div>
+        <h3 class="text-2xl font-extrabold text-white mb-3">Full Stack Developer</h3>
+        <p class="text-base text-gray-300 max-w-xs">
+          Skilled in creating captivating website designs and implementing frontend development with 3+ years experience.
+        </p>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="bg-[#0e2a3a] rounded-xl p-10 flex flex-col items-center text-center neon-card cursor-pointer">
+        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-[#c4c4c4] mb-6">
+          <img alt="Man smiling wearing blue shirt outdoor" class="w-full h-full object-cover" height="160" src="image/parid.jpeg" width="160" />
+        </div>
+        <h3 class="text-2xl font-extrabold text-white mb-3">Creative Frontend Developer</h3>
+        <p class="text-base text-gray-300 max-w-xs">
+          Specializes in crafting engaging user interfaces and seamless user experiences with modern technologies.
+        </p>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="bg-[#0e2a3a] rounded-xl p-10 flex flex-col items-center text-center neon-card cursor-pointer">
+        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-[#c4c4c4] mb-6">
+          <img alt="Man standing with arms crossed in office" class="w-full h-full object-cover" height="160" src="https://storage.googleapis.com/a1aa/image/03fe3c40-d097-420b-5b2c-d5360a795e68.jpg" width="160" />
+        </div>
+        <h3 class="text-2xl font-extrabold text-white mb-3">Experienced Backend Developer</h3>
+        <p class="text-base text-gray-300 max-w-xs">
+          Builds robust and scalable server-side applications with efficient data management and integration.
+        </p>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="bg-[#0e2a3a] rounded-xl p-10 flex flex-col items-center text-center neon-card cursor-pointer">
+        <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-[#c4c4c4] mb-6">
+          <img alt="Man typing on keyboard with focused expression" class="w-full h-full object-cover" height="160" src="https://storage.googleapis.com/a1aa/image/eaec1c6f-6ce7-40f2-a82a-c568b828678b.jpg" width="160" />
+        </div>
+        <h3 class="text-2xl font-extrabold text-white mb-3">Full Stack Developer & Problem Solver</h3>
+        <p class="text-base text-gray-300 max-w-xs">
+          Delivers end-to-end solutions combining frontend and backend skills to create complete web applications.
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <div class="flex-grow"></div>
+    <footer id="contact" class="bg-[#0a1a27] border-t border-cyan-700 shadow-[0_0_20px_4px_rgba(14,116,144,0.8)]">
+        <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 gap-8 text-gray-300">
+          <div class="space-y-4 text-center sm:text-left">
+            <h3 class="text-white text-lg font-semibold mb-2">My Services</h3>
+            <p class="text-xs max-w-xs mx-auto sm:mx-0">
+              © 2024 My Services. All rights reserved.
+            </p>
+            <div class="flex justify-center sm:justify-start space-x-4 text-cyan-400 text-xl mt-2">
+              <a href="#" aria-label="Facebook" class="hover:text-cyan-500 transition">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" aria-label="Twitter" class="hover:text-cyan-500 transition">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="#" aria-label="Instagram" class="hover:text-cyan-500 transition">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn" class="hover:text-cyan-500 transition">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+    
+          <div class="text-center max-w-md mx-auto sm:mx-0">
+            <h4 class="text-white font-semibold mb-6">Quick Links</h4>
+            <ul class="flex justify-center space-x-8 text-sm list-none p-0 m-0">
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-home text-cyan-400"></i>
+                <a href="#" class="hover:text-cyan-400 transition">Home</a>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-info-circle text-cyan-400"></i>
+                <a href="#" class="hover:text-cyan-400 transition">About</a>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-cogs text-cyan-400"></i>
+                <a href="#" class="hover:text-cyan-400 transition">Services</a>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-briefcase text-cyan-400"></i>
+                <a href="#" class="hover:text-cyan-400 transition">Portfolio</a>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i class="fas fa-envelope text-cyan-400"></i>
+                <a href="#" class="hover:text-cyan-400 transition">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script>
+const words = ["Manusia", "Calon", "Surga"];
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+  const speed = 200;
+  const target = document.getElementById("typing-text1");
+
+  function type() {
+    const currentWord = words[wordIndex];
+    const currentText = currentWord.substring(0, charIndex);
+
+    target.textContent = currentText;
+
+    if (!isDeleting && charIndex < currentWord.length) {
+      charIndex++;
+      setTimeout(type, speed);
+    } else if (isDeleting && charIndex > 0) {
+      charIndex--;
+      setTimeout(type, speed / 2);
+    } else {
+      isDeleting = !isDeleting;
+      if (!isDeleting) {
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+      setTimeout(type, 1000); // jeda antar kata
+    }
+  }
+
+  type();
+          
+      </script>
+      </body>
+    </html>
+    

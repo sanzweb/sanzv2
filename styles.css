@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+    background-color: #114594d8;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'Freestyle Script';
+  src: url('https://example.com/path-to-freestyle-script.ttf') format('truetype');
+}
+
+html {
+  scroll-padding-top: 80px; /* Adjust this value to match the height of your fixed navbar */
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.freestyle {
+    font-family: 'Freestyle Script', cursive;
+    font-size: 2.0rem;     /* Ukuran font, bisa diubah misalnya 3rem, 4rem, dll */
+    letter-spacing: 6px;   /* Jarak antar huruf */
+  }
+
+.fade-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  filter: drop-shadow(0 0 20px #00ffff) drop-shadow(0 0 30px #9b4d9b);
+  z-index: 0;
+}
+
+.fade-img.active {
+  opacity: 1;
+  z-index: 10;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+#header {
+  transition: all 0.5s ease;
+  border-radius: 0 0 20px 20px;
+}
+
+#header.neon {
+  box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+  border-bottom: 2px solid #00ffff;
+}
+
+#header.straight {
+  border-radius: 0;
+}
+
+/* Card-style untuk Pengalaman dan Pendidikan */
+.card {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    color: #00bcd4;
+    flex-shrink: 0;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  .card-date {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #00bcd4;
+  }
+  
+  .card-content h3 {
+    font-size: 1.5rem;
+    margin: 8px 0;
+  }
+  
+  .card-content p {
+    color: #555;
+  }
+  
+  .card-content .company,
+  .card-content .university {
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 10px;
+  }
+   .neon-card {
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     box-shadow: 0 0 10px #00d8ff;
+   }
+   .neon-card:hover {
+     transform: scale(1.05);
+     box-shadow:
+       0 0 10px #00d8ff,
+       0 0 20px #00d8ff,
+       0 0 30px #00d8ff,
+       0 0 40px #00d8ff;
+   }
